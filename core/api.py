@@ -1,6 +1,8 @@
-from ninja import NinjaAPI
+from ninja_jwt.controller import NinjaJWTDefaultController
+from ninja_extra import NinjaExtraAPI
 
-api = NinjaAPI(title='Sports Management API')
+api = NinjaExtraAPI(title='Sports Management API')
+api.register_controllers(NinjaJWTDefaultController)
 
 from apps.facilities.api import router as facilities_router
 from apps.federations.api import router as federations_router
