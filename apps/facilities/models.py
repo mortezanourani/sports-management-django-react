@@ -24,7 +24,7 @@ class Facility(models.Model):
     sport_type = models.CharField(max_length=255, blank=True)
 
     owner_name = models.CharField(max_length=255, blank=True)
-    owner_contract = models.CharField(max_length=100, blank=True)
+    owner_contact = models.CharField(max_length=100, blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
